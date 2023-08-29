@@ -1,11 +1,10 @@
 //Create a variable for the button// 
-const inputvalue = document.getElementById("celsiusValue");
+const inputValue = document.getElementById("data");
 const button = document.getElementById("btn")
 
 
-
 function fahrenheitValue(){
- let fahrenheit = inputvalue * (9/5) + 32;
+ let fahrenheit = inputValue.value * (9/5) + 32;
  document.getElementById("output").innerHTML = fahrenheit + "°F";
-}
+};
 button.addEventListener("click", fahrenheitValue);
