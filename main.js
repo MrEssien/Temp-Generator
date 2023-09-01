@@ -5,6 +5,6 @@ const button = document.getElementById("btn")
 
 function fahrenheitValue(){
  let fahrenheit = inputValue.value * (9/5) + 32;
- document.getElementById("output").innerHTML = fahrenheit + "°F";
+ document.getElementById("output").textContent = fahrenheit + "°F";
 };
 button.addEventListener("click", fahrenheitValue);
